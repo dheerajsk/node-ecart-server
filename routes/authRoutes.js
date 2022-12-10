@@ -11,6 +11,7 @@ const router = express.Router();
 // localhost:4100/api/auth/register
 router.post("/register", controller.register);
 router.post("/login", controller.login);
+router.get("/getUsers", controller.getUsers);
 
 // localhost:4100/api/products
 

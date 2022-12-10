@@ -27,3 +27,7 @@ module.exports.login = (req, res)=>{
     }
 
 }
+
+module.exports.getUsers = (req, res)=>{
+    return res.send(users);
+}
