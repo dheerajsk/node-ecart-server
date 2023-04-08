@@ -8,6 +8,7 @@ module.exports.register = (req, res)=>{
     if(!user){
         return res.status(400).send("User couldn't be created");
     }
+    user.id=users.length+1;
     users.push(user);
     console.log(users);
     return res.status(200).send("User is created");
